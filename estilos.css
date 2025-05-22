@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    background-color: #4a90e2;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.contenedor-fotos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.foto:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.perfil {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.info-personal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.detalles {
+    flex: 1;
+}
+
+.extras {
+    margin-top: 40px;
+}
