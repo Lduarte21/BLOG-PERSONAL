@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Lucía</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucia</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
 </head>
-<body>
-    <header>
-        <h1>Lucía</h1>
-    </header>
-    <main class="perfil">
-        <section class="info-personal">
-            <img src="lucia.jpg" alt="Lucía" class="foto-perfil">
-            <div class="detalles">
-                <h2>Estudios y formacion</h2>
-                <p>Estudiante de analista de sistemas</p>
+<body class="perfil1">
+  <div class="carrete">
+    <img id="imagen-carrusel" src="lu cancha.jpg" alt="Lucia imagen 1" />
+  </div>
 
-                <h2>Trabajo</h2>
-                <p>Analista jr-Urquiza Motos.</p>
-            </div>
-        </section>
+  <div class="info">
+    <h2>Lucia Duarte</h2>
+      <p><a href="https://www.instagram.com/laluuduarte?igsh=MWp2cnBkaGxmaXVmMQ%3D%3D&utm_source=qr " target="_blank" style="color: #E1306C; text-decoration: none;">📸 Instagram</a></p>
 
-        <section class="extras">
-            <h2>Hobbies</h2>
-            <p>Me gusta jugar al futbol y ir a  pilates.</p>
-             <img src="lu.jpg" alt="Foto en Pilates" class="foto">
-              <img src="lu futbol.jpeg" alt="Foto del Mixto de los Miercoles" class="foto">
+    <div class="scroll-text">
+      <p>
+       ¡Holaaa! 
+       Soy Lucía, tengo 28 años y actualmente trabajo en relación de dependencia mientras curso el último 
+       año de la carrera de Análisis de Sistemas, algo que me tiene muy entusiasmada porque siento que estoy 
+       cada vez más cerca de cumplir uno de mis objetivos personales. Además, hace poco lancé un proyecto propio
+       de venta de indumentaria, un desafío que me ilusiona muchísimo y al que le estoy poniendo muchas ganas.
+       En mi tiempo libre me gusta desconectarme un poco: juego al fútbol, voy a pilates, disfruto mucho salir 
+       a comer, bailar con amigas, y cuando se puede, escaparme de vacaciones. Aunque también soy fan de los 
+       domingos tranquilos de peli y manta. Me gusta buscar un equilibrio entre mis responsabilidades y las 
+       cosas que me hacen bien, y trato de seguir creciendo tanto en lo profesional como en lo personal.
+      </p>
+    </div>
+  </div>
 
-            <h2>Características personales</h2>
-            <p>Soy alegre, empatica y honesta </p>
-        </section>
-        <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucía - Blog</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    
-    </header>
-    <main>
-        <section>
-            <h2>Vacaciones</h2>
-            <p>Me encanta viajar y descubrir nuevos lugares. Mis destinos favoritos son la playa y la montaña. Cada año trato de visitar al menos un lugar nuevo para desconectarme y recargar energías.</p>
-            <img src="vacaciones.jpeg" alt="Foto de vacaciones" class="foto">
-        </section>
+  <script>
+    const imagenes = [
+      "lu cancha.jpg",
+      "lu deporte.jpg",
+      "lu futbol.jpg",
+      "lu novio.jpg",
+      "lu perro.jpg",
+      "lu gato.jpg"
+    ];
 
-        <section>
-            <h2>Mascotas</h2>
-            <p>Desde chica siempre tuve mascotas. Actualmente tengo un gato y un perro que son parte de mi familia. Disfruto mucho de pasar tiempo con ellos y sacarlos a pasear.</p>
-            <img src="koda.jpeg" alt="Foto de mi perrita Koda" class="foto">
-            <img src="fredy.jpeg" alt="Foto de mi gatito Fredy" class="foto">
-        </section>
-    </main>
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % imagenes.length;
+      document.getElementById("imagen-carrusel").src = imagenes[index];
+    }, 3000);
+  </script>
+    <div class="volver-container">
+    <a href="index.html">
+      <button class="boton-volver">← Volver a la página principal</button>
+    </a>
+  </div>
 </body>
 </html>
 
-    </main>

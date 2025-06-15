@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Marcos</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucia</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
 </head>
-<body>
-    <header>
-        <h1>Marcos</h1>
-    </header>
-    <main class="perfil">
-        <section class="info-personal">
-            <img src="perfil.jpg" alt="Marcos" class="foto-perfil">
-            <div class="detalles">
-                <h2>Estudios y formacion</h2>
-                <p>Profesor de educacion fisica y estudiante de analista de sistemas</p>
+<body class="perfil1">
+  <div class="carrete">
+    <img id="imagen-carrusel" src="viajar.jpg" alt="marcos imagen 1" />
+  </div>
 
-                <h2>Trabajo</h2>
-                <p>personal trainer y dueño de una fabrica de ladrillos ecologicos.</p>
-            </div>
-        </section>
+  <div class="info">
+    <h2>Marcos Gutierrez</h2>
+      <p><a href="https://www.instagram.com/marki_gutierrez" target="_blank" style="color: #E1306C; text-decoration: none;">Instagram</a></p>
 
-        <section class="extras">
-            <h2>Hobbies</h2>
-            <p>me gusta el deporte, el gimnasio tocar la guitarra el snowboard y dormir la siesta.</p>
+    <div class="scroll-text">
+      <p>
+         Soy Marcos, profesor de Educación Física y estudiante de Analista de Sistemas.
+         Me interesa el deporte, hago mucho gimnasio y practico snowboard.
+         En mi tiempo libre suelo salir con amigos, ver películas o series.
+          Me gusta el asado, compartir tiempo con mi familia y tengo un perro. 
+          Vivo entre Trenque Lauquen y Capital Federal.
+      </p>
+    </div>
+  </div>
 
-            <h2>Características personales</h2>
-            <p>Siempre tengo hambre..</p>
-        </section>
-    </main>
+  <script>
+    const imagenes = [
+      "viaje 2.jpg",
+      "viajar.jpg",
+      "pesca.jpg",
+      "perro mascota.jpg",
+      "1.jpg",
+      "2.jpg",
+      "3.jpg",
+      "roma.jpg",
+      "pesca 2.jpg",
+      "snow.jpg"
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % imagenes.length;
+      document.getElementById("imagen-carrusel").src = imagenes[index];
+    }, 3000);
+  </script>
+    <div class="volver-container">
+    <a href="index.html">
+      <button class="boton-volver">← Volver a la página principal</button>
+    </a>
+  </div>
 </body>
 </html>

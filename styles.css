@@ -1,0 +1,140 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Página principal */
+.index {
+  background: linear-gradient(to right, #333, #555);
+  text-align: center;
+  padding: 50px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.foto {
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.foto img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
+
+/* Páginas personales */
+.perfil1 {
+  background-color: #222;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.perfil2 {
+  background-color: #333;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Carrete de fotos */
+.carrete {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carrete img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Información debajo del carrete */
+.info {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.scroll-text {
+  height: 100px; /* altura visible */
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text p {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 15s linear infinite;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@keyframes scrollUp {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+/* Animación de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#reloj {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+}
+.volver-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-volver {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #388E3C;
+}
